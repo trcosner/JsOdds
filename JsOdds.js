@@ -1,10 +1,11 @@
+'use strict'
 //This first function takes in an array of numbers
 //and returns an array of only odds
 
 let f1Array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
 (function produceOdds(array){
-  return odds = array.filter((ele)=>{
+  return array.filter((ele)=>{
     return ele % 2;
   });
 }(f1Array));
@@ -13,7 +14,7 @@ let f1Array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 //The next function takes in a number n and builds
 //pascal's triangle with n rows
 
-let n = 5;
+let n = 7;
 //I realize this will not be performant at large number n
 //but was asked to not look anything up and did not remember
 //equation for binomial coefficient
