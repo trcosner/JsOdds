@@ -5,9 +5,9 @@
 let f1Array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
 (function produceOdds(array){
-  return array.filter((ele)=>{
-    return ele % 2;
-  });
+  let odds = f1Array.toString().match(/\d{0,}[13579]\,|\d{0,}[13579]$/g);
+  odds = odds.toString().split(',,')
+  return odds
 }(f1Array));
 
 
